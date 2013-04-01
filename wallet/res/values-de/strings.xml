@@ -207,7 +207,7 @@
 	<string name="about_credits_market_app_title">Google Play App-Eintrag</string>
 	<string name="about_credits_market_publisher_title">Andere Apps des Autors</string>
 
-	<string name="notification_coins_received_msg">BTC %s empfangen</string>
+	<string name="notification_coins_received_msg">%s empfangen</string>
 	<string name="notification_peers_connected_msg">%d Peers verbunden</string>
 
 	<!-- generic buttons -->
