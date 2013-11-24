@@ -52,7 +52,7 @@ import de.schildbach.wallet.AddressBookProvider;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.CircularProgressView;
 import de.schildbach.wallet.util.WalletUtils;
-import de.schildbach.wallet_test.R;
+import de.schildbach.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -244,7 +244,7 @@ public class TransactionsListAdapter extends BaseAdapter
 				rowConfidenceCircular.setProgress(1);
 				rowConfidenceCircular.setMaxProgress(1);
 				rowConfidenceCircular.setSize(confidence.numBroadcastPeers());
-				rowConfidenceCircular.setMaxSize(maxConnectedPeers - 1);
+				rowConfidenceCircular.setMaxSize(maxConnectedPeers / 2); // magic value
 				rowConfidenceCircular.setColors(colorInsignificant, colorInsignificant);
 			}
 			else if (confidenceType == ConfidenceType.BUILDING)
